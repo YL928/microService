@@ -1,0 +1,10 @@
+<table border="2"> 
+    <tr>
+        <th *ngFor="let item of tasks[0] | keyvalue">{{item.key}}</th>
+    </tr>  
+    <tr *ngFor="let row of tasks">
+        <td *ngFor="let item of row | keyvalue"> {{row[item.key]}}</td>
+    </tr>
+</table>
+
+
